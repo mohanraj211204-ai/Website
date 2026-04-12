@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ───────────────── NAV ───────────────── -->
+<nav class="nav" id="nav">
+  <div class="nav-logo" id="nav-logo-text">Portfolio</div>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#certificates">Certs</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="theme-toggle" id="themeToggle" title="Toggle theme">🌙</button>
+</nav>
+
+<!-- ───────────────── HERO ───────────────── -->
+<section class="hero" id="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+  <div class="hero-content">
+    <p class="hero-greeting">Hello, World — I'm</p>
+    <h1 class="hero-name" id="hero-name">Your Name Here</h1>
+    <p class="hero-tagline" id="hero-tagline">Your tagline goes here — developer, designer, dreamer.</p>
+    <div class="hero-btns">
+      <a href="#about" class="btn btn-primary">Explore ↓</a>
+      <a href="#contact" class="btn btn-outline">Get in Touch</a>
+    </div>
+    <div class="hero-scroll-hint">scroll</div>
+  </div>
+</section>
+
+<!-- ───────────────── ABOUT ───────────────── -->
+<section class="section about-section" id="about">
+  <div class="section-label">01 / About</div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <h2 class="section-heading">About <span class="accent">Me</span></h2>
+      <p id="about-text-1" class="about-para">
+        Add a short introduction about yourself here. Who are you? What drives you? What's your story?
+      </p>
+      <p id="about-text-2" class="about-para">
+        Add more details — your background, passions, professional philosophy, or anything you'd like visitors to know.
+      </p>
+      <div class="about-stats">
+        <div class="stat-card">
+          <span class="stat-num" id="stat-exp">0+</span>
+          <span class="stat-label">Years Exp.</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" id="stat-projects">0+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" id="stat-clients">0+</span>
+          <span class="stat-label">Clients</span>
+        </div>
+      </div>
+    </div>
+    <div class="about-image-wrap reveal reveal-right">
+      <div class="about-img-frame">
+        <img src="" id="about-img" alt="Profile Photo" onerror="this.src=''" />
+        <div class="about-img-placeholder" id="about-img-placeholder">
+          <span>📷</span>
+          <p>Profile Photo</p>
+        </div>
+      </div>
+      <div class="about-img-accent"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────── SKILLS ───────────────── -->
+<section class="section skills-section" id="skills">
+  <div class="section-label">02 / Skills</div>
+  <h2 class="section-heading centered reveal">My <span class="accent">Skills</span></h2>
+  <p class="section-sub centered reveal">Technologies and tools I work with</p>
+  <div class="skills-grid" id="skills-grid">
+    <!-- Populated by JS -->
+  </div>
+  <div class="skills-empty-msg" id="skills-empty-msg">
+    <span>No skills added yet.</span><br/>
+    <small>Unlock settings (⚙️) to add your skills.</small>
+  </div>
+</section>
+
+<!-- ───────────────── CERTIFICATES ───────────────── -->
+<section class="section certs-section" id="certificates">
+  <div class="section-label">03 / Certificates</div>
+  <h2 class="section-heading centered reveal">My <span class="accent">Certificates</span></h2>
+  <p class="section-sub centered reveal">Courses, achievements & credentials</p>
+  <div class="certs-grid" id="certs-grid">
+    <!-- Populated by JS -->
+  </div>
+  <div class="certs-empty-msg" id="certs-empty-msg">
+    <div class="empty-card">
+      <span class="empty-icon">🏆</span>
+      <p>No certificates added yet.</p>
+      <small>Unlock settings to add your achievements.</small>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────── RESUME ───────────────── -->
+<section class="section resume-section" id="resume">
+  <div class="section-label">04 / Resume</div>
+  <div class="resume-inner reveal">
+    <h2 class="section-heading">My <span class="accent">Resume</span></h2>
+    <p id="resume-desc" class="about-para">Download or view my resume to learn more about my experience, education, and achievements.</p>
+    <div class="resume-btns">
+      <a class="btn btn-primary" id="view-resume-btn" href="#" target="_blank">👁 View Resume</a>
+      <a class="btn btn-outline" id="download-resume-btn" href="#" download>⬇ Download Resume</a>
+    </div>
+    <p class="resume-note" id="resume-note">No resume file uploaded yet. Add one via Settings.</p>
+  </div>
+  <div class="resume-decoration">
+    <div class="deco-line"></div>
+    <div class="deco-circle"></div>
+  </div>
+</section>
+
+<!-- ───────────────── CONTACT ───────────────── -->
+<section class="section contact-section" id="contact">
+  <div class="section-label">05 / Contact</div>
+  <h2 class="section-heading centered reveal">Get In <span class="accent">Touch</span></h2>
+  <p class="section-sub centered reveal" id="contact-intro">Feel free to reach out for collaborations, opportunities, or just a hello.</p>
+
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <div class="contact-item" id="ci-email-wrap">
+        <span class="ci-icon">✉️</span>
+        <div>
+          <span class="ci-label">Email</span>
+          <a class="ci-val" id="ci-email" href="#">your@email.com</a>
+        </div>
+      </div>
+      <div class="contact-item" id="ci-phone-wrap">
+        <span class="ci-icon">📞</span>
+        <div>
+          <span class="ci-label">Phone</span>
+          <a class="ci-val" id="ci-phone" href="#">+00 000 000 0000</a>
+        </div>
+      </div>
+      <div class="contact-item" id="ci-location-wrap">
+        <span class="ci-icon">📍</span>
+        <div>
+          <span class="ci-label">Location</span>
+          <span class="ci-val" id="ci-location">Your City, Country</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="social-grid reveal reveal-right">
+      <h3 class="social-heading">Social Links</h3>
+      <div class="social-links" id="social-links">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────── FOOTER ───────────────── -->
+<footer class="footer">
+  <p id="footer-text">© <span id="footer-year"></span> <span id="footer-name">Your Name</span>. All rights reserved.</p>
+  <p class="footer-sub">Built with passion 🌹</p>
+</footer>
+
+<!-- ───────────────── SETTINGS GEAR ───────────────── -->
+<button class="settings-gear" id="settingsGear" title="Admin Settings">⚙</button>
+
+<!-- ───────────────── LOCK SCREEN ───────────────── -->
+<div class="overlay" id="lockOverlay">
+  <div class="lock-card">
+    <div class="lock-icon">🔐</div>
+    <h2>Admin Access</h2>
+    <p>Enter your password to manage portfolio content.</p>
+    <div class="lock-input-wrap">
+      <input type="password" id="lockInput" placeholder="Enter password" autocomplete="off" />
+      <button class="btn btn-primary" id="lockSubmit">Unlock</button>
+    </div>
+    <p class="lock-error" id="lockError"></p>
+    <button class="btn-ghost" id="lockClose">✕ Cancel</button>
+  </div>
+</div>
+
+<!-- ───────────────── SETTINGS PANEL ───────────────── -->
+<div class="overlay" id="settingsOverlay">
+  <div class="settings-panel">
+    <div class="settings-header">
+      <h2>⚙ Settings Panel</h2>
+      <button class="btn-ghost" id="settingsClose">✕</button>
+    </div>
+
+    <div class="settings-tabs">
+      <button class="stab active" data-tab="profile">👤 Profile</button>
+      <button class="stab" data-tab="skills">🛠 Skills</button>
+      <button class="stab" data-tab="certs">🏆 Certs</button>
+      <button class="stab" data-tab="resume">📄 Resume</button>
+      <button class="stab" data-tab="contact">📬 Contact</button>
+      <button class="stab" data-tab="security">🔑 Security</button>
+    </div>
+
+    <!-- PROFILE TAB -->
+    <div class="stab-content active" id="tab-profile">
+      <div class="field-group">
+        <label>Nav / Brand Name</label>
+        <input type="text" id="s-nav-name" placeholder="Portfolio" />
+      </div>
+      <div class="field-group">
+        <label>Hero Name</label>
+        <input type="text" id="s-hero-name" placeholder="Your Name Here" />
+      </div>
+      <div class="field-group">
+        <label>Hero Tagline</label>
+        <input type="text" id="s-hero-tagline" placeholder="Your tagline..." />
+      </div>
+      <div class="field-group">
+        <label>About — Paragraph 1</label>
+        <textarea id="s-about-1" rows="3" placeholder="Short intro..."></textarea>
+      </div>
+      <div class="field-group">
+        <label>About — Paragraph 2</label>
+        <textarea id="s-about-2" rows="3" placeholder="More details..."></textarea>
+      </div>
+      <div class="field-row">
+        <div class="field-group">
+          <label>Years Experience</label>
+          <input type="text" id="s-stat-exp" placeholder="5+" />
+        </div>
+        <div class="field-group">
+          <label>Projects Done</label>
+          <input type="text" id="s-stat-projects" placeholder="30+" />
+        </div>
+        <div class="field-group">
+          <label>Happy Clients</label>
+          <input type="text" id="s-stat-clients" placeholder="20+" />
+        </div>
+      </div>
+      <div class="field-group">
+        <label>Profile Image URL <small>(or paste base64)</small></label>
+        <input type="text" id="s-profile-img" placeholder="https://..." />
+      </div>
+      <div class="field-group">
+        <label>Or Upload Profile Image</label>
+        <input type="file" id="s-profile-upload" accept="image/*" />
+      </div>
+      <div class="field-group">
+        <label>Footer Name</label>
+        <input type="text" id="s-footer-name" placeholder="Your Name" />
+      </div>
+      <button class="btn btn-primary full-btn" id="saveProfile">💾 Save Profile</button>
+    </div>
+
+    <!-- SKILLS TAB -->
+    <div class="stab-content" id="tab-skills">
+      <div class="add-skill-form">
+        <div class="field-row">
+          <div class="field-group">
+            <label>Skill Name</label>
+            <input type="text" id="s-skill-name" placeholder="e.g. React" />
+          </div>
+          <div class="field-group">
+            <label>Icon (emoji or URL)</label>
+            <input type="text" id="s-skill-icon" placeholder="⚛️ or URL" />
+          </div>
+          <div class="field-group">
+            <label>Level %</label>
+            <input type="number" id="s-skill-level" placeholder="85" min="1" max="100" />
+          </div>
+        </div>
+        <div class="field-group">
+          <label>Category</label>
+          <input type="text" id="s-skill-category" placeholder="Frontend / Backend / Design..." />
+        </div>
+        <button class="btn btn-primary" id="addSkillBtn">+ Add Skill</button>
+      </div>
+      <div class="manage-list" id="skills-manage-list"></div>
+    </div>
+
+    <!-- CERTS TAB -->
+    <div class="stab-content" id="tab-certs">
+      <div class="add-cert-form">
+        <div class="field-group">
+          <label>Certificate Title</label>
+          <input type="text" id="s-cert-title" placeholder="e.g. AWS Certified Developer" />
+        </div>
+        <div class="field-group">
+          <label>Issuer</label>
+          <input type="text" id="s-cert-issuer" placeholder="e.g. Amazon Web Services" />
+        </div>
+        <div class="field-group">
+          <label>Year</label>
+          <input type="text" id="s-cert-year" placeholder="2024" />
+        </div>
+        <div class="field-group">
+          <label>Certificate URL (optional)</label>
+          <input type="text" id="s-cert-url" placeholder="https://..." />
+        </div>
+        <div class="field-group">
+          <label>Badge Icon (emoji)</label>
+          <input type="text" id="s-cert-icon" placeholder="🏅" />
+        </div>
+        <button class="btn btn-primary" id="addCertBtn">+ Add Certificate</button>
+      </div>
+      <div class="manage-list" id="certs-manage-list"></div>
+    </div>
+
+    <!-- RESUME TAB -->
+    <div class="stab-content" id="tab-resume">
+      <div class="field-group">
+        <label>Resume Description</label>
+        <textarea id="s-resume-desc" rows="2" placeholder="Brief text above resume buttons..."></textarea>
+      </div>
+      <div class="field-group">
+        <label>Resume File URL <small>(Google Drive view link etc.)</small></label>
+        <input type="text" id="s-resume-url" placeholder="https://..." />
+      </div>
+      <div class="field-group">
+        <label>Or Upload Resume (PDF)</label>
+        <input type="file" id="s-resume-upload" accept=".pdf" />
+        <small id="s-resume-upload-note" class="upload-note">Upload converts to base64 and stores locally.</small>
+      </div>
+      <div class="current-resume" id="current-resume-info"></div>
+      <button class="btn btn-primary full-btn" id="saveResume">💾 Save Resume Settings</button>
+    </div>
+
+    <!-- CONTACT TAB -->
+    <div class="stab-content" id="tab-contact">
+      <div class="field-group">
+        <label>Email</label>
+        <input type="email" id="s-email" placeholder="your@email.com" />
+      </div>
+      <div class="field-group">
+        <label>Phone</label>
+        <input type="text" id="s-phone" placeholder="+00 000 000 0000" />
+      </div>
+      <div class="field-group">
+        <label>Location</label>
+        <input type="text" id="s-location" placeholder="City, Country" />
+      </div>
+      <div class="field-group">
+        <label>Contact Intro Text</label>
+        <textarea id="s-contact-intro" rows="2" placeholder="Feel free to reach out..."></textarea>
+      </div>
+
+      <h4 class="sub-heading">Social Links</h4>
+      <div id="social-manage">
+        <!-- Dynamically rendered -->
+      </div>
+      <button class="btn btn-outline" id="addSocialBtn">+ Add Social Link</button>
+      <br/>
+      <button class="btn btn-primary full-btn" id="saveContact" style="margin-top:1rem">💾 Save Contact</button>
+    </div>
+
+    <!-- SECURITY TAB -->
+    <div class="stab-content" id="tab-security">
+      <div class="field-group">
+        <label>Current Password</label>
+        <input type="password" id="s-cur-pass" placeholder="Current password" />
+      </div>
+      <div class="field-group">
+        <label>New Password</label>
+        <input type="password" id="s-new-pass" placeholder="New password" />
+      </div>
+      <div class="field-group">
+        <label>Confirm New Password</label>
+        <input type="password" id="s-conf-pass" placeholder="Confirm password" />
+      </div>
+      <button class="btn btn-primary" id="changePassBtn">🔑 Change Password</button>
+      <p class="pass-msg" id="pass-msg"></p>
+      <div class="danger-zone">
+        <h4>⚠ Danger Zone</h4>
+        <p>Reset all portfolio data to defaults. This cannot be undone.</p>
+        <button class="btn btn-danger" id="resetAllBtn">🗑 Reset All Data</button>
+      </div>
+    </div>
+
+    <div class="settings-toast" id="settings-toast"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
